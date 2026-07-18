@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenBrain Demo</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0A0A0A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'JetBrains Mono', monospace;
+}
+.terminal {
+  width: 820px;
+  background: #0D0D0D;
+  border: 1px solid #1E1E24;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+.terminal-header {
+  background: #111118;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #1E1E24;
+}
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot-red { background: #EC4899; opacity: 0.6; }
+.dot-yellow { background: #FBBF24; opacity: 0.6; }
+.dot-green { background: #34D399; opacity: 0.6; }
+.terminal-title {
+  color: #52525B;
+  font-size: 11px;
+  margin-left: 12px;
+  letter-spacing: 0.5px;
+}
+.terminal-body {
+  padding: 20px 24px;
+  font-size: 13px;
+  line-height: 1.6;
+  min-height: 400px;
+}
+.line { color: #6B7280; margin: 0; }
+.line-green { color: #34D399; }
+.line-purple { color: #818CF8; }
+.line-amber { color: #FBBF24; }
+.line-cyan { color: #22D3EE; }
+.line-pink { color: #F472B6; }
+.line-white { color: #E4E4E7; }
+.line-dim { color: #3F3F46; }
+.prompt { color: #6B7280; }
+.arrow { color: #34D399; }
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 16px;
+  background: #818CF8;
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+}
+@keyframes blink { 50% { opacity: 0; } }
+.sep { height: 4px; }
+</style>
+</head>
+<body>
+<div class="terminal" id="terminal">
+  <div class="terminal-header">
+    <span class="dot dot-red"></span>
+    <span class="dot dot-yellow"></span>
+    <span class="dot dot-green"></span>
+    <span class="terminal-title">OpenBrain — Memory Plugin v0.1.0</span>
+  </div>
+  <div class="terminal-body" id="output">
+  </div>
+</div>
+<script>
+const output = document.getElementById('output');
+let frame = 0;
+
+function addLine(html, cls = '') {
+  const div = document.createElement('div');
+  if (cls) div.className = cls;
+  div.innerHTML = html;
+  output.appendChild(div);
+}
+
+function setCursor(html) {
+  const div = document.createElement('div');
+  div.className = 'line';
+  div.innerHTML = html + '<span class="cursor"></span>';
+  output.appendChild(div);
+}
+
+const scenes = [
+  () => {
+    addLine('<span class="line-dim"># OpenBrain v0.1.0 — Memory Plugin for OpenCode</span>');
+    addLine('<span class="line-dim"># Type search_memories, create_skill, or list_skills</span>');
+  },
+  // Scene 1: search_memories
+  () => { setCursor('<span class="prompt">$</span> <span class="line-white">search_memories --type episodic --limit 3</span>'); },
+  () => {
+    addLine('');
+    addLine('<span class="line-purple">┌─────────────────────────────────────────────────────┐</span>');
+    addLine('<span class="line-purple">│ <span class="line-white">ID:       </span><span class="line-cyan">mem_gX7k2pR9</span>                              <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Type:     </span><span class="line-amber">Episodic</span>                                <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Content:  </span><span class="line-white">Executed tool search_memories</span>           <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Conf:     </span><span class="line-green">0.90</span>                                    <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Tags:     </span><span class="line-dim">tool-execution, search_memories</span>         <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">├─────────────────────────────────────────────────────┤</span>');
+    addLine('<span class="line-purple">│ <span class="line-white">ID:       </span><span class="line-cyan">mem_a1B2c3D4</span>                              <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Type:     </span><span class="line-amber">Episodic</span>                                <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Content:  </span><span class="line-white">Executed tool create_skill</span>              <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Conf:     </span><span class="line-green">0.90</span>                                    <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Tags:     </span><span class="line-dim">tool-execution, create_skill</span>            <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">└─────────────────────────────────────────────────────┘</span>');
+    addLine('<span class="line-green">  ✓ Found 3 memories</span>');
+  },
+  // Scene 2: create_skill
+  () => { setCursor('<span class="prompt">$</span> <span class="line-white">create_skill --name "sqlite-migration" \\</span>'); },
+  () => { setCursor('<span class="line-white">  --description "SQLite migration pattern" \\</span>'); },
+  () => { setCursor('<span class="line-white">  --steps "Create migration file" "Run migration"</span>'); },
+  () => {
+    addLine('');
+    addLine('<span class="line-green">  ✓ Skill created</span>');
+    addLine('<span class="line-dim">  ID:     skill_y7W8qR2X</span>');
+    addLine('<span class="line-dim">  Name:   sqlite-migration</span>');
+    addLine('<span class="line-dim">  Steps:  2</span>');
+  },
+  // Scene 3: list_skills
+  () => { setCursor('<span class="prompt">$</span> <span class="line-white">list_skills</span>'); },
+  () => {
+    addLine('');
+    addLine('<span class="line-green">  Available Skills (4)</span>');
+    addLine('<span class="line-dim">  ─────────────────────────────────────</span>');
+    addLine('<span class="line-white">  1. debug-node</span>       <span class="line-green">    92% success</span>');
+    addLine('<span class="line-white">  2. review-pr</span>        <span class="line-green">    88% success</span>');
+    addLine('<span class="line-white">  3. write-test</span>       <span class="line-green">    95% success</span>');
+    addLine('<span class="line-white">  4. sqlite-migration</span> <span class="line-green">   100% success</span>');
+  },
+  // Scene 4: Dream Engine log
+  () => { setCursor('<span class="prompt">$</span> <span class="line-white">search_memories --type semantic --query "dream"</span>'); },
+  () => {
+    addLine('');
+    addLine('<span class="line-purple">┌─────────────────────────────────────────────────────┐</span>');
+    addLine('<span class="line-purple">│ <span class="line-white">ID:       </span><span class="line-cyan">mem_d5E6f7G8</span>                              <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Type:     </span><span class="line-amber">Semantic</span>                                <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Content:  </span><span class="line-white">[Compressed] SQLite schema...</span>            <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Conf:     </span><span class="line-green">0.88</span>                                    <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">│ <span class="line-white">Tags:     </span><span class="line-dim">compressed, schema, database</span>            <span class="line-purple">│</span></span>');
+    addLine('<span class="line-purple">└─────────────────────────────────────────────────────┘</span>');
+    addLine('<span class="line-green">  ✓ 1 memory found (compressed by Dream Engine)</span>');
+  },
+  // Final
+  () => { setCursor('<span class="prompt">$</span> '); },
+];
+
+let currentScene = 0;
+
+function playNext() {
+  if (currentScene < scenes.length) {
+    scenes[currentScene]();
+    currentScene++;
+    output.scrollTop = output.scrollHeight;
+  }
+}
+
+// Play all scenes automatically for the GIF
+window.addEventListener('load', () => {
+  const interval = setInterval(() => {
+    if (currentScene < scenes.length) {
+      playNext();
+    } else {
+      clearInterval(interval);
+    }
+  }, 600);
+});
+</script>
+</body>
+</html>

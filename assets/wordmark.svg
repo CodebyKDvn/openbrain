@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none">
+  <defs>
+    <linearGradient id="wg1" x1="0" y1="0" x2="320" y2="80">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+  <!-- Logo mark -->
+  <circle cx="32" cy="40" r="24" stroke="url(#wg1)" stroke-width="1.2" opacity="0.2"/>
+  <circle cx="32" cy="40" r="10" stroke="url(#wg1)" stroke-width="0.8" opacity="0.15"/>
+  <circle cx="32" cy="28" r="3" fill="#818CF8"/>
+  <circle cx="42" cy="34" r="2" fill="#818CF8"/>
+  <circle cx="42" cy="46" r="2" fill="#818CF8"/>
+  <circle cx="32" cy="52" r="3" fill="#818CF8"/>
+  <circle cx="22" cy="46" r="2" fill="#818CF8"/>
+  <circle cx="22" cy="34" r="2" fill="#818CF8"/>
+  <circle cx="32" cy="40" r="4.5" fill="#34D399"/>
+  <line x1="32" y1="28" x2="42" y2="34" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="42" y1="34" x2="42" y2="46" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="42" y1="46" x2="32" y2="52" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="32" y1="52" x2="22" y2="46" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="22" y1="46" x2="22" y2="34" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="22" y1="34" x2="32" y2="28" stroke="#818CF8" stroke-width="0.6" opacity="0.4"/>
+  <line x1="32" y1="28" x2="32" y2="36" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <line x1="42" y1="34" x2="35" y2="39" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <line x1="42" y1="46" x2="35" y2="42" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <line x1="32" y1="52" x2="32" y2="44" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <line x1="22" y1="46" x2="29" y2="42" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <line x1="22" y1="34" x2="29" y2="39" stroke="#34D399" stroke-width="0.5" opacity="0.5"/>
+  <!-- Text -->
+  <text x="68" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#F8FAFC" letter-spacing="-0.5">Open</text>
+  <text x="150" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="300" fill="url(#wg1)" letter-spacing="-0.5">Brain</text>
+  <!-- Tagline -->
+  <text x="68" y="66" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#6B7280" letter-spacing="0.8">MEMORY PLUGIN FOR OPENCODE</text>
+</svg>

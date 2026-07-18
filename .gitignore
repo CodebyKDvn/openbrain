@@ -1,2 +1,11 @@
 node_modules
 .opencode
+dist
+*.db
+.env
+.env.local
+.DS_Store
+Thumbs.db
+*.log
+.vscode/settings.json
+.idea

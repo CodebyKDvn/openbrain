@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#0A0A0A"/>
+      <stop offset="50%" stop-color="#0F0F1A"/>
+      <stop offset="100%" stop-color="#0A0A0A"/>
+    </linearGradient>
+    <linearGradient id="accent1" x1="0" y1="0" x2="1200" y2="630">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="50%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="glow1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.08"/>
+      <stop offset="50%" stop-color="#6C5CE7" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Ambient glow -->
+  <circle cx="200" cy="315" r="300" fill="url(#glow1)"/>
+  <circle cx="700" cy="315" r="250" fill="url(#glow1)"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="210" x2="1200" y2="210" stroke="#27272A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="0" y1="420" x2="1200" y2="420" stroke="#27272A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="400" y1="0" x2="400" y2="630" stroke="#27272A" stroke-width="0.5" opacity="0.2"/>
+  <line x1="800" y1="0" x2="800" y2="630" stroke="#27272A" stroke-width="0.5" opacity="0.2"/>
+  <!-- Neural network visualization -->
+  <g opacity="0.12">
+    <circle cx="200" cy="200" r="35" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="350" cy="250" r="25" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="500" cy="180" r="30" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="650" cy="260" r="28" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="250" cy="380" r="32" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="420" cy="400" r="22" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="580" cy="430" r="35" stroke="#818CF8" stroke-width="1"/>
+    <circle cx="750" cy="370" r="25" stroke="#818CF8" stroke-width="1"/>
+    <line x1="200" y1="200" x2="350" y2="250" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="350" y1="250" x2="500" y2="180" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="500" y1="180" x2="650" y2="260" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="200" y1="200" x2="250" y2="380" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="350" y1="250" x2="420" y2="400" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="500" y1="180" x2="580" y2="430" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="650" y1="260" x2="750" y2="370" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="250" y1="380" x2="420" y2="400" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="420" y1="400" x2="580" y2="430" stroke="#818CF8" stroke-width="0.8"/>
+    <line x1="580" y1="430" x2="750" y2="370" stroke="#818CF8" stroke-width="0.8"/>
+  </g>
+  <!-- Decorative element -->
+  <g opacity="0.05">
+    <circle cx="900" cy="315" r="200" stroke="#818CF8" stroke-width="0.5" fill="none"/>
+    <circle cx="900" cy="315" r="150" stroke="#818CF8" stroke-width="0.3" fill="none"/>
+    <circle cx="900" cy="315" r="100" stroke="#818CF8" stroke-width="0.2" fill="none"/>
+  </g>
+  <!-- Logo mark -->
+  <g transform="translate(80, 195) scale(1.2)">
+    <circle cx="32" cy="40" r="24" stroke="url(#accent1)" stroke-width="1" opacity="0.3"/>
+    <circle cx="32" cy="40" r="8" stroke="#818CF8" stroke-width="0.6" opacity="0.2"/>
+    <circle cx="32" cy="28" r="2.5" fill="#818CF8"/>
+    <circle cx="42" cy="34" r="1.8" fill="#818CF8"/>
+    <circle cx="42" cy="46" r="1.8" fill="#818CF8"/>
+    <circle cx="32" cy="52" r="2.5" fill="#818CF8"/>
+    <circle cx="22" cy="46" r="1.8" fill="#818CF8"/>
+    <circle cx="22" cy="34" r="1.8" fill="#818CF8"/>
+    <circle cx="32" cy="40" r="3.5" fill="#34D399"/>
+    <line x1="32" y1="28" x2="42" y2="34" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="42" y1="34" x2="42" y2="46" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="42" y1="46" x2="32" y2="52" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="32" y1="52" x2="22" y2="46" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="22" y1="46" x2="22" y2="34" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+    <line x1="22" y1="34" x2="32" y2="28" stroke="#818CF8" stroke-width="0.5" opacity="0.5"/>
+  </g>
+  <!-- Title -->
+  <text x="180" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#F8FAFC" letter-spacing="-1.5">OpenBrain</text>
+  <text x="180" y="340" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="400" fill="#6B7280" letter-spacing="0.5">Persistent memory, reflection &amp; learning for OpenCode AI</text>
+  <!-- Feature pills -->
+  <rect x="180" y="380" width="110" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="190" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#818CF8">Memory Engine</text>
+  <rect x="300" y="380" width="120" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="312" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#34D399">Reflection Engine</text>
+  <rect x="430" y="380" width="105" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="442" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#06B6D4">Learning Engine</text>
+  <rect x="545" y="380" width="110" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="557" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#F59E0B">Dream Engine</text>
+  <rect x="665" y="380" width="115" height="28" rx="14" fill="#27272A" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="677" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#A78BFA">Context Engine</text>
+  <!-- Footer -->
+  <text x="180" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#52525B" letter-spacing="1">OPENCODE PLUGIN  ·  SQLITE  ·  TYPESCRIPT  ·  MIT</text>
+</svg>

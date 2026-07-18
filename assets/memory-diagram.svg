@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="400"><stop offset="0%" stop-color="#0A0A0A"/><stop offset="100%" stop-color="#111118"/></linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#bg)"/>
+  <text x="400" y="36" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#F8FAFC" letter-spacing="1">MEMORY SYSTEM</text>
+  <line x1="330" y1="44" x2="470" y2="44" stroke="#3F3F46" stroke-width="1"/>
+  <!-- Central Memory Store -->
+  <rect x="300" y="145" width="200" height="60" rx="8" fill="#1A1A2E" stroke="#818CF8" stroke-width="1"/>
+  <text x="400" y="170" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#818CF8">Memory Store</text>
+  <text x="400" y="190" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6B7280">SQLite · 9 memory types</text>
+  <!-- 7 memory type cards -->
+  <rect x="40" y="70" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="88" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#818CF8">Episodic</text>
+  <text x="55" y="102" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Tool executions, events</text>
+  <rect x="40" y="118" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#34D399">Semantic</text>
+  <text x="55" y="150" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Facts, concepts, reflections</text>
+  <rect x="40" y="166" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="184" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#FBBF24">Procedural</text>
+  <text x="55" y="198" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Skills, workflows</text>
+  <rect x="40" y="214" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="232" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#F472B6">Decision</text>
+  <text x="55" y="246" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Architecture decisions</text>
+  <rect x="40" y="262" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="280" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#22D3EE">Bug</text>
+  <text x="55" y="294" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Errors, fixes, workarounds</text>
+  <rect x="40" y="310" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="328" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#A78BFA">Workspace</text>
+  <text x="55" y="342" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Project structure, config</text>
+  <rect x="40" y="358" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="55" y="376" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#34D399">Project</text>
+  <text x="55" y="390" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Project-level knowledge</text>
+  <!-- Extra types -->
+  <rect x="600" y="70" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="615" y="88" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#F59E0B">Reflection</text>
+  <text x="615" y="102" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Session reflections</text>
+  <rect x="600" y="118" width="160" height="42" rx="6" fill="#111118" stroke="#52525B" stroke-width="0.3" opacity="0.5"/>
+  <text x="615" y="136" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#EC4899">Skill</text>
+  <text x="615" y="150" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Learned capabilities</text>
+  <!-- Connection lines -->
+  <line x1="200" y1="91" x2="300" y2="160" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="139" x2="300" y2="170" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="187" x2="300" y2="180" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="235" x2="300" y2="185" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="283" x2="300" y2="190" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="331" x2="300" y2="180" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="200" y1="379" x2="300" y2="175" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="600" y1="91" x2="500" y2="160" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+  <line x1="600" y1="139" x2="500" y2="170" stroke="#52525B" stroke-width="0.3" opacity="0.3"/>
+</svg>

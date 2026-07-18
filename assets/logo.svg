@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="64" y2="64">
+      <stop offset="0%" stop-color="#818CF8"/>
+      <stop offset="100%" stop-color="#6C5CE7"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="32" y1="8" x2="32" y2="56">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer neural ring -->
+  <circle cx="32" cy="32" r="28" stroke="url(#g1)" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="32" cy="32" r="24" stroke="url(#g1)" stroke-width="1" opacity="0.15"/>
+  <!-- Neural nodes -->
+  <circle cx="32" cy="16" r="3.5" fill="url(#g1)"/>
+  <circle cx="44" cy="24" r="2.5" fill="url(#g1)"/>
+  <circle cx="44" cy="40" r="2.5" fill="url(#g1)"/>
+  <circle cx="32" cy="48" r="3.5" fill="url(#g1)"/>
+  <circle cx="20" cy="40" r="2.5" fill="url(#g1)"/>
+  <circle cx="20" cy="24" r="2.5" fill="url(#g1)"/>
+  <!-- Center node -->
+  <circle cx="32" cy="32" r="5" fill="url(#g2)"/>
+  <circle cx="32" cy="32" r="3" fill="#0A0A0A" opacity="0.3"/>
+  <!-- Neural connections -->
+  <line x1="32" y1="16" x2="44" y2="24" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="44" y1="24" x2="44" y2="40" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="44" y1="40" x2="32" y2="48" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="32" y1="48" x2="20" y2="40" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="20" y1="40" x2="20" y2="24" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <line x1="20" y1="24" x2="32" y2="16" stroke="#818CF8" stroke-width="0.8" opacity="0.5"/>
+  <!-- Connections to center -->
+  <line x1="32" y1="16" x2="32" y2="27" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <line x1="44" y1="24" x2="36" y2="30" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <line x1="44" y1="40" x2="36" y2="35" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <line x1="32" y1="48" x2="32" y2="37" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <line x1="20" y1="40" x2="28" y2="35" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <line x1="20" y1="24" x2="28" y2="30" stroke="#34D399" stroke-width="0.7" opacity="0.6"/>
+  <!-- Subtle pulse dots on connections -->
+  <circle cx="38" cy="20" r="1" fill="#818CF8" opacity="0.4"/>
+  <circle cx="44" cy="32" r="1" fill="#818CF8" opacity="0.4"/>
+  <circle cx="38" cy="44" r="1" fill="#818CF8" opacity="0.4"/>
+  <circle cx="26" cy="44" r="1" fill="#818CF8" opacity="0.4"/>
+  <circle cx="20" cy="32" r="1" fill="#818CF8" opacity="0.4"/>
+  <circle cx="26" cy="20" r="1" fill="#818CF8" opacity="0.4"/>
+</svg>

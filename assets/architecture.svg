@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600"><stop offset="0%" stop-color="#0A0A0A"/><stop offset="100%" stop-color="#111118"/></linearGradient>
+    <linearGradient id="purp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#818CF8"/><stop offset="100%" stop-color="#6C5CE7"/></linearGradient>
+    <linearGradient id="teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#34D399"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+    <linearGradient id="ambr" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#F472B6"/><stop offset="100%" stop-color="#EC4899"/></linearGradient>
+    <linearGradient id="cyn" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#22D3EE"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+    <linearGradient id="vlt" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#A78BFA"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#F8FAFC" letter-spacing="1">ARCHITECTURE</text>
+  <line x1="340" y1="48" x2="460" y2="48" stroke="#3F3F46" stroke-width="1"/>
+  <!-- OpenCode Host -->
+  <rect x="250" y="70" width="300" height="36" rx="6" fill="#1A1A2E" stroke="#6C5CE7" stroke-width="1" opacity="0.6"/>
+  <text x="400" y="93" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#A78BFA" letter-spacing="0.5">OPENCODE HOST (Bun Runtime)</text>
+  <!-- Arrow down -->
+  <line x1="400" y1="106" x2="400" y2="130" stroke="#3F3F46" stroke-width="1"/>
+  <polygon points="396,128 400,134 404,128" fill="#3F3F46"/>
+  <!-- Plugin Layer -->
+  <rect x="200" y="136" width="400" height="36" rx="6" fill="#1A1A2E" stroke="#818CF8" stroke-width="1"/>
+  <text x="400" y="159" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#818CF8" letter-spacing="0.5">OPENBRAIN PLUGIN — src/index.ts</text>
+  <!-- Hooks row -->
+  <rect x="210" y="180" width="90" height="22" rx="4" fill="#18181B" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="255" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">tool()</text>
+  <rect x="310" y="180" width="90" height="22" rx="4" fill="#18181B" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="355" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">execute.after</text>
+  <rect x="410" y="180" width="90" height="22" rx="4" fill="#18181B" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="455" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">system.transform</text>
+  <rect x="510" y="180" width="90" height="22" rx="4" fill="#18181B" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="555" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">event()</text>
+  <!-- Arrow down -->
+  <line x1="400" y1="210" x2="400" y2="240" stroke="#3F3F46" stroke-width="1"/>
+  <polygon points="396,238 400,244 404,238" fill="#3F3F46"/>
+  <!-- Engines Layer -->
+  <rect x="50" y="250" width="700" height="130" rx="8" fill="#111118" stroke="#27272A" stroke-width="0.5"/>
+  <text x="70" y="270" font-family="system-ui, sans-serif" font-size="10" fill="#52525B" letter-spacing="1">DOMAIN ENGINES</text>
+  <!-- Engine boxes -->
+  <rect x="65" y="280" width="124" height="40" rx="6" fill="#1A1A2E" stroke="#818CF8" stroke-width="0.5"/>
+  <circle cx="78" cy="300" r="4" fill="#818CF8"/>
+  <text x="88" y="296" font-family="system-ui, sans-serif" font-size="11" fill="#818CF8">Memory Engine</text>
+  <text x="88" y="310" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">7 memory types</text>
+  <rect x="200" y="280" width="124" height="40" rx="6" fill="#1A1A2E" stroke="#34D399" stroke-width="0.5"/>
+  <circle cx="213" cy="300" r="4" fill="#34D399"/>
+  <text x="223" y="296" font-family="system-ui, sans-serif" font-size="11" fill="#34D399">Reflection</text>
+  <text x="223" y="310" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Post-session analysis</text>
+  <rect x="335" y="280" width="124" height="40" rx="6" fill="#1A1A2E" stroke="#FBBF24" stroke-width="0.5"/>
+  <circle cx="348" cy="300" r="4" fill="#FBBF24"/>
+  <text x="358" y="296" font-family="system-ui, sans-serif" font-size="11" fill="#FBBF24">Learning Engine</text>
+  <text x="358" y="310" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Skill management</text>
+  <rect x="470" y="280" width="124" height="40" rx="6" fill="#1A1A2E" stroke="#22D3EE" stroke-width="0.5"/>
+  <circle cx="483" cy="300" r="4" fill="#22D3EE"/>
+  <text x="493" y="296" font-family="system-ui, sans-serif" font-size="11" fill="#22D3EE">Context Engine</text>
+  <text x="493" y="310" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">System prompt injection</text>
+  <rect x="605" y="280" width="124" height="40" rx="6" fill="#1A1A2E" stroke="#F472B6" stroke-width="0.5"/>
+  <circle cx="618" cy="300" r="4" fill="#F472B6"/>
+  <text x="628" y="296" font-family="system-ui, sans-serif" font-size="11" fill="#F472B6">Dream Engine</text>
+  <text x="628" y="310" font-family="system-ui, sans-serif" font-size="8" fill="#52525B">Background maintenance</text>
+  <!-- PluginTools -->
+  <rect x="65" y="335" width="300" height="30" rx="4" fill="#18181B" stroke="#3F3F46" stroke-width="0.5"/>
+  <text x="80" y="354" font-family="system-ui, sans-serif" font-size="10" fill="#6B7280">PluginTools: search_memories · list_skills · create_skill</text>
+  <!-- Arrow down -->
+  <line x1="400" y1="390" x2="400" y2="420" stroke="#3F3F46" stroke-width="1"/>
+  <polygon points="396,418 400,424 404,418" fill="#3F3F46"/>
+  <!-- Data Layer -->
+  <rect x="150" y="430" width="500" height="60" rx="8" fill="#111118" stroke="#27272A" stroke-width="0.5"/>
+  <rect x="165" y="440" width="230" height="40" rx="6" fill="#1A1A2E" stroke="#8B5CF6" stroke-width="0.5"/>
+  <text x="180" y="458" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA">SQLiteMemoryStorage</text>
+  <text x="180" y="472" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">implements MemoryStorage interface</text>
+  <rect x="410" y="440" width="225" height="40" rx="6" fill="#1A1A2E" stroke="#8B5CF6" stroke-width="0.5"/>
+  <text x="425" y="458" font-family="system-ui, sans-serif" font-size="11" fill="#A78BFA">SQLiteDatabase</text>
+  <text x="425" y="472" font-family="system-ui, sans-serif" font-size="9" fill="#52525B">bun:sqlite / better-sqlite3</text>
+  <!-- Arrow down -->
+  <line x1="400" y1="490" x2="400" y2="520" stroke="#3F3F46" stroke-width="1"/>
+  <polygon points="396,518 400,524 404,518" fill="#3F3F46"/>
+  <!-- Storage -->
+  <rect x="250" y="530" width="300" height="36" rx="6" fill="#1A1A2E" stroke="#34D399" stroke-width="0.5" stroke-dasharray="3,2"/>
+  <text x="400" y="553" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#34D399" letter-spacing="0.5">~/.opencode/openbrain/openbrain.db</text>
+  <!-- Database icon -->
+  <circle cx="270" cy="548" r="5" fill="none" stroke="#34D399" stroke-width="0.5"/>
+  <line x1="267" y1="546" x2="273" y2="546" stroke="#34D399" stroke-width="0.5"/>
+  <line x1="267" y1="548" x2="273" y2="548" stroke="#34D399" stroke-width="0.5"/>
+  <line x1="267" y1="550" x2="273" y2="550" stroke="#34D399" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,13 @@
+src
+node_modules
+.opencode
+scripts
+assets/*.svg
+*.db
+.env
+.env.local
+tsconfig.json
+vitest.config.ts
+.eslintrc.json
+.gitignore
+.npmignore
