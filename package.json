@@ -1,0 +1,38 @@
+{
+  "name": "opencode-plugin-openbrain",
+  "version": "0.1.0",
+  "description": "The intelligent OpenCode plugin with memory, reflection, learning, and more",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "opencode-plugin",
+    "ai",
+    "memory",
+    "reflection",
+    "learning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.7.2",
+    "nanoid": "^5.0.9"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.18.3",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": ">=1.18.0"
+  }
+}
